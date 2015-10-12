@@ -1,0 +1,19 @@
+/**
+ * Add all your common class here.
+ */
+
+.center-wrapper {
+  @include center-block;
+}
+
+.rtl {
+	direction: rtl;
+}
+
+// extend bootstrap's bg-info etc.
+@include bg-variant('.bg-plain', #ffffff);
+@include text-emphasis-variant('.text-plain', $text-color);
+
+.text-plain {
+	
+}

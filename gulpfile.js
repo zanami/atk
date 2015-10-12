@@ -16,20 +16,20 @@ var gulp        = require('gulp'),
 //////////////////////////////
 var path = {
   sassWatch: [
-    'assets/scss/*.scss',
-    'assets/scss/**/*.scss'
+    'source/scss/*.scss',
+    'source/scss/**/*.scss'
   ],
-  sass_src_S: 'assets/scss/style.scss',
-  sass_src_P: 'assets/scss/print.scss',
-  sass_dest: 'dist/css',
+  sass_src_S: 'source/scss/style.scss',
+  sass_src_P: 'source/scss/print.scss',
+  sass_dest: 'css',
   js_lint_src: [
-      'dist/js/*.js'
+      'js/*.js'
   ],
   js_src : [
-			'assets/bootstrap-sass/assets/javascripts/bootstrap.min.js',
-      'assets/js/*.js'
+      'source/bootstrap-sass/assets/javascripts/bootstrap.min.js',
+      'source/js/*.js'
   ],
-  js_dest : 'dist/js/'
+  js_dest : 'js/'
 };
 
 //////////////////////////////
@@ -73,7 +73,7 @@ gulp.task('sass', function(){
         .on('error',console.log.bind(console))
         .pipe(concat('style.css'))
         .on('error',console.log.bind(console))
-        .pipe(gulp.dest('dist/css'))
+        .pipe(gulp.dest('css'))
         .pipe(browserSync.reload({stream: true}))
         .on('error',console.log.bind(console));
     gulp.src(path.sass_src_P)
@@ -85,7 +85,7 @@ gulp.task('sass', function(){
         .on('error',console.log.bind(console))
         .pipe(concat('print.css'))
         .on('error',console.log.bind(console))
-        .pipe(gulp.dest('dist/css'))
+        .pipe(gulp.dest('css'))
         .pipe(browserSync.reload({stream: true}))
         .on('error',console.log.bind(console));
 });
@@ -94,14 +94,14 @@ gulp.task('sass', function(){
 // SPRITE Tasks
 //////////////////////////////
 gulp.task('sprite', function () {
-  var spriteData = gulp.src('assets/img/sprite/*.png')
+  var spriteData = gulp.src('source/img/sprite/*.png')
   .pipe(spritesmith({
     imgName: 'sprite.png',
     cssName: '_sprite.scss',
     imgPath: '../img/sprite.png'
   })).on('error',console.log.bind(console));
-  spriteData.img.pipe(gulp.dest('dist/img/')).on('error',console.log.bind(console));
-  spriteData.css.pipe(gulp.dest('assets/scss/config/')).on('error',console.log.bind(console));
+  spriteData.img.pipe(gulp.dest('img/')).on('error',console.log.bind(console));
+  spriteData.css.pipe(gulp.dest('source/scss/config/')).on('error',console.log.bind(console));
 });
 
 //////////////////////////////
@@ -110,9 +110,9 @@ gulp.task('sprite', function () {
 gulp.task('watch', ['browser-sync'], function () {
     gulp.watch(path.js_src, ['js']).on('error',console.log.bind(console));
     gulp.watch(path.sassWatch, ['sass']).on('error',console.log.bind(console));
-    gulp.watch('assets/img/sprite/*.*', ['sprite']).on('error',console.log.bind(console));
+    gulp.watch('source/img/sprite/*.*', ['sprite']).on('error',console.log.bind(console));
 
-    gulp.watch('dist/js/*.*').on('change', browserSync.reload);
+    gulp.watch('js/*.*').on('change', browserSync.reload);
 });
 
 //////////////////////////////

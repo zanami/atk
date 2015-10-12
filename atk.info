@@ -3,7 +3,14 @@ description = A Kalatheme subtheme powered by Twitter Bootstrap & Science.
 base theme = kalatheme 
 core = 7.x 
 
+regions[header_top] = Header top 
+regions[header] = Header
 regions[content] = Content 
+regions[footer] = Footer 
 
-stylesheets[all][] = css/main.css 
+stylesheets[all][] = css/style.css 
+stylesheets[print][] = css/print.css 
+; Override base theme tweaks
+stylesheets[screen][] = css/tweaks.css
 
+scripts[] = js/main.js

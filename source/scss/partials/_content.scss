@@ -1,0 +1,56 @@
+/**
+ * Default content styles
+ */
+
+/**
+ * Service content type
+ */
+.group-service-intro {
+	padding: 30px 0;
+}
+
+/**
+ * collapse pannels etc
+ */
+
+.specifications {
+
+	.panel-heading {
+		cursor: pointer;
+	}
+
+	.panel-heading.collapsed .fa-chevron-up, .panel-heading .fa-chevron-down {
+		display: none;
+	}
+
+	.panel-heading.collapsed .fa-chevron-down, .panel-heading .fa-chevron-up {
+		display: inline-block;
+	}
+
+}
+
+// unstyled panels for collapsible regions
+.panel.panel-unstyled {
+	margin:0;
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.panel.panel-unstyled.advantage .panel-body {
+	background-color: $gray-lighter;
+}
+
+// accordion controls
+#advantages a.collapsed {
+	opacity: 0.7;
+}
+
+
+// frontpage
+
+.service-item .service-btn {
+	background-color: $btn-primary-bg;
+	border-color: $btn-primary-color;
+}

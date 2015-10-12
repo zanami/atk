@@ -1,0 +1,176 @@
+/**
+ * Custom bootstrap navbar
+ */
+
+// Basics of a navbar
+$navbar-height:                    100px !default;
+$navbar-margin-bottom:             $line-height-computed !default;
+$navbar-border-radius:             0;
+$navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
+$navbar-padding-vertical:          10px; //(($navbar-height - $line-height-computed) / 2) !default;
+$navbar-collapse-max-height:       340px !default;
+
+$navbar-custom-color:             $text-color !default;
+$navbar-custom-bg:                transparent !default;
+$navbar-custom-border:            darken($navbar-custom-bg, 6.5%) !default;
+
+// Navbar links
+$navbar-custom-link-color:                $link-color !default;
+$navbar-custom-link-hover-color:          #fff !default;
+$navbar-custom-link-hover-bg:             $brand-primary !default;
+$navbar-custom-link-active-color:         #fff !default;
+$navbar-custom-link-active-bg:            $brand-primary !default;
+$navbar-custom-link-disabled-color:       #ccc !default;
+$navbar-custom-link-disabled-bg:          transparent !default;
+
+// Navbar brand label
+$navbar-custom-brand-color:               $navbar-custom-link-color !default;
+$navbar-custom-brand-hover-color:         $link-hover-color !default;
+$navbar-custom-brand-hover-bg:            none !default;
+
+// Navbar toggle
+$navbar-custom-toggle-hover-bg:           $brand-primary !default;
+$navbar-custom-toggle-icon-bar-bg:        #fff !default;
+$navbar-custom-toggle-border-color:       darken($brand-primary, 15%) !default;
+
+
+// Default navbar
+.navbar-custom {
+  background-color: $navbar-custom-bg;
+  border-color: $navbar-custom-border;
+	text-transform: uppercase;
+	margin: 10px 0 20px 0;
+
+  .navbar-brand {
+    color: $navbar-custom-brand-color;
+	  padding: floor($navbar-padding-vertical) $navbar-padding-horizontal;
+		padding-bottom: 0;
+	  font-size: $font-size-large;
+	  line-height: $line-height-computed;
+		height: auto;
+    &:hover,
+    &:focus {
+      color: $navbar-custom-brand-hover-color;
+      background-color: $navbar-custom-brand-hover-bg;
+    }
+  }
+
+  .navbar-text {
+    color: $navbar-custom-color;
+  }
+
+  .navbar-nav {
+		float: right;
+    > li > a {
+      color: $navbar-custom-link-color;
+
+      &:hover,
+      &:focus {
+        color: $navbar-custom-link-hover-color;
+        background-color: $navbar-custom-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-custom-link-active-color;
+        background-color: $navbar-custom-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-custom-link-disabled-color;
+        background-color: $navbar-custom-link-disabled-bg;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border-color: $navbar-custom-toggle-border-color;
+    &:hover,
+    &:focus {
+      background-color: $navbar-custom-toggle-hover-bg;
+    }
+    .icon-bar {
+      background-color: $navbar-custom-toggle-icon-bar-bg;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $navbar-custom-border;
+  }
+
+  // Dropdown menu items
+  .navbar-nav {
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $navbar-custom-link-active-bg;
+        color: $navbar-custom-link-active-color;
+      }
+    }
+
+    @media (max-width: $grid-float-breakpoint-max) {
+      // Dropdowns get custom display when collapsed
+      .open .dropdown-menu {
+        > li > a {
+          color: $navbar-custom-link-color;
+          &:hover,
+          &:focus {
+            color: $navbar-custom-link-hover-color;
+            background-color: $navbar-custom-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $navbar-custom-link-active-color;
+            background-color: $navbar-custom-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $navbar-custom-link-disabled-color;
+            background-color: $navbar-custom-link-disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+
+  // Links in navbars
+  //
+  // Add a class to ensure links outside the navbar nav are colored correctly.
+
+  .navbar-link {
+    color: $navbar-custom-link-color;
+    &:hover {
+      color: $navbar-custom-link-hover-color;
+    }
+  }
+
+  .btn-link {
+    color: $navbar-custom-link-color;
+    &:hover,
+    &:focus {
+      color: $navbar-custom-link-hover-color;
+    }
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus {
+        color: $navbar-custom-link-disabled-color;
+      }
+    }
+  }
+}

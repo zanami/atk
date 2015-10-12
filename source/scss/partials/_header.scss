@@ -1,0 +1,19 @@
+/**
+ * Header
+ */
+
+.navbar-administration.navbar-fixed {
+	.navbar-fixed-top {
+		margin-top: 39px;
+	}
+	&.navbar-horizontal {
+		.navbar-fixed-top {
+			margin-top: 79px;
+		}
+	}
+}
+
+.navbar-fixed-top.top-nav-collapse {
+	min-height: 50px;
+	padding: 0;
+}

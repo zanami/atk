@@ -1,0 +1,330 @@
+/**
+ * Drupal overrides
+ */
+
+/**
+ * node edit form
+ */
+
+.page-node-edit, .page-user, .page-file, .page-node-add {
+	#content {
+		@include container-fixed($grid-gutter-width);
+	}
+}
+
+#admin-menu {
+	z-index: 9999;
+	.dropdown {
+		z-index: 9999;
+	}
+}
+.views-display-setting {
+	.label {
+		float: none;
+	}
+	.views-ajax-link {
+		float: none;
+	}
+}
+table {
+	.active {
+		background-color: transparent;
+	}
+	&.package tr.enabling {
+		background: transparent;
+	}
+	th.checkbox input {
+		float: none !important;
+		margin-left: 0 !important;
+	}
+	td.checkbox input {
+		float: none !important;
+		margin-left: 0 !important;
+	}
+}
+tr {
+	&.dblog-error {
+		background: transparent;
+		.active {
+			background: transparent;
+		}
+	}
+	&.dblog-notice {
+		background: transparent;
+		.active {
+			background: transparent;
+		}
+	}
+	&.dblog-warning {
+		background: transparent;
+		.active {
+			background: transparent;
+		}
+	}
+	&.even {
+		background-color: transparent;
+		border-bottom: inherit;
+		padding: inherit;
+	}
+	&.odd {
+		background-color: transparent;
+		border-bottom: inherit;
+		padding: inherit;
+	}
+	&.selected td {
+		background: transparent;
+	}
+}
+fieldset {
+	legend {
+		float: left;
+		line-height: 1em;
+		margin: 0;
+	}
+	.panel-body {
+		clear: both;
+	}
+}
+div {
+	&.vertical-tabs {
+		border: none;
+		border: 1px solid #ddd;
+		outline: none;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 4px;
+		.vertical-tabs-panes {
+			padding: 20px 10px;
+		}
+		ul.vertical-tabs-list {
+			border: none;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			outline: none;
+			li {
+				border: none;
+				background: none;
+				outline: none !important;
+				//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+				border-radius: 4px 0 0 4px;
+				border: 1px solid;
+				border-color: #fff #ddd #fff #fff;
+				&.selected {
+					border-color: #ddd #fff #ddd #ddd;
+				}
+				a {
+					outline: none !important;
+					//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+					border-radius: 4px 0 0 4px;
+				}
+			}
+		}
+		.form-type-textfield input {
+			width: 90%;
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: content-box;
+		}
+	}
+	&#admin-toolbar.vertical {
+		z-index: 9999;
+	}
+}
+ul {
+	&.links {
+		padding: 0;
+		list-style: none outside none;
+	}
+	&.panels-ipe-linkbar {
+		list-style: none outside none;
+	}
+}
+.form-control-feedback {
+	width: 13px;
+	height: 13px;
+	color: #bbb;
+	top: 60%;
+	right: 10px;
+}
+@-webkit-keyframes throbber-spin {
+	0% {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotate(0deg);
+	}
+	100% {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotate(359deg);
+	}
+}
+@keyframes throbber-spin {
+	0% {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotate(0deg);
+	}
+	100% {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotate(359deg);
+	}
+}
+#main-wrapper {
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+#module-filter-squeeze {
+	background-color: transparent;
+	border: 0;
+}
+.panopoly-spotlight-label {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: content-box;
+}
+.mceEditor {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: content-box;
+}
+.box-sizing-content-box {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: content-box;
+}
+#edit-module-filter-name {
+	display: inline;
+}
+#tabs {
+	margin-bottom: 20px;
+}
+#kala-submit-change-title {
+	display: inline;
+}
+.features-export-component {
+	.checkbox {
+		label {
+			margin-left: 10px;
+		}
+		input[type="checkbox"] {
+			margin-left: 0;
+		}
+	}
+	.radio input[type="radio"] {
+		margin-left: 0;
+	}
+	.radio-inline input[type="radio"] {
+		margin-left: 0;
+	}
+	.checkbox-inline input[type="checkbox"] {
+		margin-left: 0;
+	}
+}
+.features-export-list {
+	.radio input[type="radio"] {
+		margin-left: 0;
+	}
+	.radio-inline input[type="radio"] {
+		margin-left: 0;
+	}
+	.checkbox input[type="checkbox"] {
+		margin-left: 0;
+	}
+	.checkbox-inline input[type="checkbox"] {
+		margin-left: 0;
+	}
+}
+#node-edit #edit-title {
+	height: auto;
+}
+.views-ajax-popup .scroll fieldset {
+	padding: 5px;
+}
+.views-ui-display-tab-bucket .views-display-setting .label {
+	color: #666;
+	font-size: 100%;
+}
+.views-ui-display-tab-actions .ctools-button-processed {
+	input {
+		color: #000;
+	}
+	li a {
+		color: #000;
+	}
+}
+th.checkbox {
+	display: table-cell;
+}
+td.checkbox {
+	display: table-cell;
+}
+.update tbody > tr {
+	&:nth-child(odd) > {
+		td {
+			background: transparent;
+		}
+		th {
+			background: transparent;
+		}
+	}
+	&:nth-child(even) > {
+		td {
+			background: transparent;
+		}
+		th {
+			background: transparent;
+		}
+	}
+}
+.collapse-processed .fieldset-wrapper {
+	margin-left: 25px;
+	margin-bottom: 10px;
+}
+html.js {
+	input[autocomplete] {
+		background-repeat: no-repeat;
+		&.fa-on {
+			background: transparent;
+		}
+	}
+	input.throbbing.fa-on {
+		background: transparent;
+	}
+	fieldset.collapsed {
+		border-bottom-width: 0;
+		border-left-width: 1px;
+		border-right-width: 1px;
+		height: auto;
+	}
+}
+input.throbbing + .form-control-feedback {
+	animation: throbber-spin 1s infinite linear;
+	&:before {
+		color: rgba(95, 95, 95, 1);
+	}
+}
+form .form-actions .btn {
+	margin-right: 10px;
+}
+.pane-content .container {
+	width: auto;
+}
+.version-links .links {
+	list-style-type: none;
+}
+.draggable a.tabledrag-handle .handle {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: content-box;
+}
+#pane-library table {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: content-box;
+}
+label.option {
+	display: inline;
+	font-weight: normal;
+}
+.media-list-thumbnails .form-type-checkbox {
+	bottom: 0;
+}
+.batch-processed .progress {
+	height: auto;
+}
+#kalapreview-image-load-image img {
+	width: 50%;
+}
+#features-export-form .features-export-parent {
+	margin: 0 0 20px;
+}
