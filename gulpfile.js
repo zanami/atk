@@ -56,7 +56,7 @@ gulp.task('js', function () {
         .on('error',console.log.bind(console))
         .pipe(concat('main.js'))
         .on('error',console.log.bind(console))
-        .pipe(gulp.dest('dist/js'))
+        .pipe(gulp.dest('js'))
         .on('error',console.log.bind(console));
 });
 
