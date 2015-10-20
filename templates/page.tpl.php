@@ -181,16 +181,6 @@
 		<?php print render($page['header']); ?>
   </header>
 
-  <div id="header-wrapper">
-    <div class="container">
-      <div id="navigation">
-        <div class="column">
-          <?php print render($page['header']); ?>
-        </div>
-      </div>
-    </div><!-- /.section, /#header -->
-  </div>
-
   <!-- Page Main -->
   <div id="main-wrapper" class="clearfix">
     <main id="main" class="clearfix" role="main">
@@ -224,7 +214,7 @@
       </div> <!-- /.section, /#top-content -->
 
       <div class="section">
-        <div id="content">
+        <div id="content" class="column <?php $no_panels ? print 'container' : ''; ?>">
             <?php print render($page['content']); ?>
         </div>
       </div><!-- /.section, /#content -->
