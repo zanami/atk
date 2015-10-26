@@ -1,0 +1,64 @@
+/**
+ * Default content styles
+ */
+
+.dv-section {
+	overflow: hidden;
+}
+
+.dv-content {
+	position: relative;
+	overflow: hidden;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.dv-col-centered {
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+}
+
+/* background colors (apply anywhere) */
+
+.dv-bg-main {
+	background-color: #ffffff;
+}
+
+.dv-bg-alt {
+	background-color: #f2f2f2;
+}
+
+.dv-bg-alt-2 {
+	background-color: #efefef;
+}
+
+
+/* helper classes */
+
+.dv-text-big {
+	font-size: x-large;
+}
+
+.dv-border-right {
+	border-right: 1px dotted #cfcfcf;
+}
+
+.dv-table-title {
+	border-bottom: 1px solid #cfcfcf;
+}
+
+/* content images */
+#dv-section-welcome {
+	min-height:800px;
+	position: relative;
+}
+#dv-section-welcome figure.dv-door-eco {
+  background-image: url(img/bg22.jpg);
+  background-size: 1600px 800px;
+  position: absolute;
+  width: 1600px;
+  height: 800px;
+  top: 0;
+}
