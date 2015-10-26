@@ -5,3 +5,12 @@ body {
 	min-height: 100%;
 	background: $gray-lighter url(/sites/dverivizit.ru/themes/atk/img/bg.jpg) left top repeat;
 }
+
+#main-wrapper {
+	margin-bottom: 0px;
+	margin-top: 2px;
+}
+#footer-wrapper {
+	border-top: 8px solid #859d8f;
+	padding: 20px 0;
+}
