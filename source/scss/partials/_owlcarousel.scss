@@ -1,0 +1,29 @@
+/**
+ * OWL stuff
+ */
+
+
+.owl-carousel {
+	
+	.owl-controls {
+		margin: 0;
+	}
+	.owl-buttons {
+		.owl-next {
+			position: absolute;
+			top: 50%;
+			right: 2%;
+		}
+		.owl-prev {
+			position: absolute;
+			top: 50%;
+			left: 2%;
+		}
+  }
+	.owl-pagination {
+		position: absolute;
+		bottom: 10%;
+		left: 30%;
+		right: 30%;
+	}
+}
