@@ -2,6 +2,16 @@
  * Default content styles
  */
 
+.dv-hero-pane h4.pane-title {
+	position: absolute;
+	z-index: 100;
+	padding: 4px 8px;
+	left: 50%;
+	transform: translate(-50%, -30px);
+	background: white;
+	@include box-shadow(0 2px 2px rgba(0,0,0,.3));
+}
+
 .dv-section {
 	overflow: hidden;
 }

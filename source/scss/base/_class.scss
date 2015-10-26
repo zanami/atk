@@ -18,6 +18,10 @@
 	
 }
 
+.list-inline ul {
+	@extend .list-inline;
+}
+
 /* extend grid to have 1/5 columns */
 
 .col-xs-15,
