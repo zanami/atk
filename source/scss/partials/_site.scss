@@ -39,7 +39,20 @@ luxe - 7764be (8873c8)
 		padding-bottom: 15px;
 		color: white;
 	}
-	.page-node-2 & {
+	.page-node-2 & { // standart
 		background: #45a6d5;
 	}
+	.page-node-5 & { //luxe
+		background: #7764be;
+	}
+	.page-node-4 & { //prestige
+		background: #ffc244;
+	}
+	.page-node-3 & { //optimum
+		background: #cbdee7;
+	}
+	.page-node-6 & { //eco
+		background: #91ce20;
+	}
+	
 }
