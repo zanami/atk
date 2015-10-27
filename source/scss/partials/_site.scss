@@ -21,3 +21,23 @@ body {
 		max-width: none;
 	}
 }
+
+/* eco - 91ce20  (b1d725)
+optimum - cbdee7 (d7e5eb)
+standart - 45a6d5 (47aad7)
+prestige - ffc244 (ffcd4f)
+luxe - 7764be (8873c8)
+*/
+
+.field-name-title-field {
+	background: #efefef;
+	.page-title {
+		@extend .container;
+		margin-top: 0;
+		margin-bottom:0;
+		padding: 15px 0;
+	}
+	.page-node-2 & {
+		background: #45a6d5;
+	}
+}
