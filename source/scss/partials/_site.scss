@@ -14,3 +14,10 @@ body {
 	border-top: 8px solid #859d8f;
 	padding: 20px 0;
 }
+
+#content {
+	overflow: hidden;
+	img {
+		max-width: none;
+	}
+}
