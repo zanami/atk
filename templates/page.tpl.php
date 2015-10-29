@@ -147,7 +147,7 @@
           }
         ?>
         <?php print theme('links__system_main_menu', array(
-          'links' => $main_menu,
+          'links' => $main_menu_expanded,
           'attributes' => $pri_attributes,
           'heading' => array(
             'text' => t('Main menu'),
