@@ -79,11 +79,11 @@ $navbar-custom-toggle-border-color:       darken($brand-primary, 15%) !default;
         background-color: $navbar-custom-link-hover-bg;
       }
     }
-    > .active > a {
+    > .active > a,
+		> .active-trail > a {
       &,
       &:hover,
-      &:focus,
-			&.active-trail {
+      &:focus {
         color: $navbar-custom-link-active-color;
         background-color: $navbar-custom-link-active-bg;
       }
