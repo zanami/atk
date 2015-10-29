@@ -82,7 +82,8 @@ $navbar-custom-toggle-border-color:       darken($brand-primary, 15%) !default;
     > .active > a {
       &,
       &:hover,
-      &:focus {
+      &:focus,
+			&.active-trail {
         color: $navbar-custom-link-active-color;
         background-color: $navbar-custom-link-active-bg;
       }
