@@ -151,6 +151,12 @@ $navbar-custom-toggle-border-color:       darken($brand-primary, 15%) !default;
   }
 
 
+	// normal view (uncollapsed)
+  @media (min-width: $grid-float-breakpoint) {
+		margin: 42px 0 0 40px;
+	}
+
+
   // Links in navbars
   //
   // Add a class to ensure links outside the navbar nav are colored correctly.

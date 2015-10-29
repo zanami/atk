@@ -6,6 +6,10 @@ body {
 	background: $gray-lighter url(/sites/dverivizit.ru/themes/atk/img/bg.jpg) left top repeat;
 }
 
+#page {
+	overflow: hidden;
+}
+
 #main-wrapper {
 	margin-bottom: 0px;
 	margin-top: 0px;
@@ -16,7 +20,6 @@ body {
 }
 
 #content {
-	overflow: hidden;
 	img {
 		max-width: none;
 	}
