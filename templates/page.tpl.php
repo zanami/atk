@@ -176,7 +176,7 @@
 						</div>
           <?php endif; ?>
 					
-					<?php if ($secondary_menu) {
+					<?php if ($secondary_menu): ?>
 						<div class="dv-bg-main dv-nav-secondary">
 		        <?php
 		          $sec_attributes = array(
@@ -188,6 +188,7 @@
 		          }
 		        ?>
 					</div>
+          <?php endif; ?>
 
 		        <?php print theme('links__system_secondary_menu', array(
 		          'links' => $secondary_menu,
