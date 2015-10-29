@@ -15,11 +15,11 @@ $navbar-custom-bg:                transparent !default;
 $navbar-custom-border:            darken($navbar-custom-bg, 6.5%) !default;
 
 // Navbar links
-$navbar-custom-link-color:                $link-color !default;
-$navbar-custom-link-hover-color:          #fff !default;
-$navbar-custom-link-hover-bg:             $brand-primary !default;
-$navbar-custom-link-active-color:         #fff !default;
-$navbar-custom-link-active-bg:            $brand-primary !default;
+$navbar-custom-link-color:                #030303 !default;
+$navbar-custom-link-hover-color:          #000 !default;
+$navbar-custom-link-hover-bg:             #f48243 !default;
+$navbar-custom-link-active-color:         #000 !default;
+$navbar-custom-link-active-bg:            #f48243 !default;
 $navbar-custom-link-disabled-color:       #ccc !default;
 $navbar-custom-link-disabled-bg:          transparent !default;
 
@@ -63,7 +63,7 @@ $navbar-custom-toggle-border-color:       darken($brand-primary, 15%) !default;
   }
 
   .navbar-nav {
-		float: right;
+		float: left;
     > li > a {
       color: $navbar-custom-link-color;
 
