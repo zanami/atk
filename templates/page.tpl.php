@@ -186,11 +186,8 @@
 		          if (!$secondary_menu) {
 		            $sec_attributes['class'][] = 'element-invisible';
 		          }
-		        ?>
-					</div>
-          <?php endif; ?>
-
-		        <?php print theme('links__system_secondary_menu', array(
+		          
+							print theme('links__system_secondary_menu', array(
 		          'links' => $secondary_menu,
 		          'attributes' => $sec_attributes,
 		          'heading' => array(
@@ -199,9 +196,8 @@
 		            'class' => array('element-invisible'),
 		          ),
 		        )); ?>
-					}
-					
-					?>
+						</div>
+          <?php endif; ?>
 
           <?php if ($messages): ?>
             <div id="messages" class="container">
