@@ -147,7 +147,7 @@
           }
         ?>
         <?php print theme('links__system_main_menu', array(
-          'links' => $main_menu_expanded,
+          'links' => $main_menu,
           'attributes' => $pri_attributes,
           'heading' => array(
             'text' => t('Main menu'),
@@ -177,7 +177,7 @@
           <?php endif; ?>
 					
 					<?php if ($secondary_menu): ?>
-						<div class="dv-bg-main dv-nav-secondary">
+						<div class="dv-bg-main dv-nav-secondary"><div class="container">
 		        <?php
 		          $sec_attributes = array(
 		            'id' => 'secondary-menu-links',
@@ -196,7 +196,7 @@
 		            'class' => array('element-invisible'),
 		          ),
 		        )); ?>
-						</div>
+						</div></div>
           <?php endif; ?>
 
           <?php if ($messages): ?>
