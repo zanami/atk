@@ -156,25 +156,6 @@
           ),
         )); ?>
 
-        <?php
-          $sec_attributes = array(
-            'id' => 'secondary-menu-links',
-            'class' => array('nav', 'navbar-nav', 'secondary-links'),
-          );
-          if (!$secondary_menu) {
-            $sec_attributes['class'][] = 'element-invisible';
-          }
-        ?>
-
-        <?php print theme('links__system_secondary_menu', array(
-          'links' => $secondary_menu,
-          'attributes' => $sec_attributes,
-          'heading' => array(
-            'text' => t('Secondary menu'),
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?>
       </nav>
 
     </div>
@@ -194,6 +175,32 @@
 	            </h1>
 						</div>
           <?php endif; ?>
+					
+					<?php if ($secondary_menu) {
+						<div class="dv-bg-main dv-nav-secondary">
+		        <?php
+		          $sec_attributes = array(
+		            'id' => 'secondary-menu-links',
+		            'class' => array('nav', 'nav-pills', 'dv-secondary-links'),
+		          );
+		          if (!$secondary_menu) {
+		            $sec_attributes['class'][] = 'element-invisible';
+		          }
+		        ?>
+					</div>
+
+		        <?php print theme('links__system_secondary_menu', array(
+		          'links' => $secondary_menu,
+		          'attributes' => $sec_attributes,
+		          'heading' => array(
+		            'text' => t('Secondary menu'),
+		            'level' => 'h2',
+		            'class' => array('element-invisible'),
+		          ),
+		        )); ?>
+					}
+					
+					?>
 
           <?php if ($messages): ?>
             <div id="messages" class="container">
