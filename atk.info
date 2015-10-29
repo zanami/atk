@@ -13,4 +13,5 @@ stylesheets[print][] = css/print.css
 ; Override base theme tweaks
 stylesheets[screen][] = css/tweaks.css
 
+scripts[] = js/bootstrap.min.js
 scripts[] = js/main.js
