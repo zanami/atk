@@ -188,8 +188,8 @@
         <div class="column">
           <a id="main-content"></a>
           <?php if (($no_panels || $always_show_page_title) && $title): ?>
-						<div class=".field-name-title-field">
-	            <h1 id="page-title" class="title">
+						<div class="field-name-title-field">
+	            <h1 id="page-title" class="page-title">
 	              <?php print $title; ?>
 	            </h1>
 						</div>
