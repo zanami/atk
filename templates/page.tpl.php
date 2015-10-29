@@ -146,8 +146,8 @@
             $pri_attributes['class'][] = 'element-invisible';
           }
         ?>
-        <?php print theme('links__system_main_menu', array(
-          'links' => $main_menu_expanded,
+        <?php print theme('links', array(
+          'links' => $main_menu,
           'attributes' => $pri_attributes,
           'heading' => array(
             'text' => t('Main menu'),
