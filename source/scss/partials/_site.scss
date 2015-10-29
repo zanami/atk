@@ -42,9 +42,11 @@ luxe - 7764be (8873c8)
 		@extend .container;
 		margin-top: 0;
 		margin-bottom:0;
-		padding-top: 15px;
-		padding-bottom: 15px;
+		padding-top: 12px;
+		padding-bottom: 12px;
 		color: white;
+		font-weight: 200;
+		font-size: 36px;
 	}
 	.page-node-2 & { // standart
 		background: #45a6d5;

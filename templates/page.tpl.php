@@ -187,10 +187,12 @@
       <div id="top-content">
         <div class="column">
           <a id="main-content"></a>
-          <?php if (false && ($no_panels || $always_show_page_title) && $title): ?>
-            <h1 id="page-title" class="title">
-              <?php print $title; ?>
-            </h1>
+          <?php if (($no_panels || $always_show_page_title) && $title): ?>
+						<div class=".field-name-title-field">
+	            <h1 id="page-title" class="title">
+	              <?php print $title; ?>
+	            </h1>
+						</div>
           <?php endif; ?>
 
           <?php if ($messages): ?>
