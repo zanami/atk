@@ -14,7 +14,7 @@ function atk_process_page(&$variables) {
 
 	 // If panels arent being used at all. From kalatheme
 	 $variables['no_panels'] = !((isset($variables['node']->type) && $variables['node']->type == 'product') || (module_exists('page_manager') && page_manager_get_current_page()));
-	 $variables['$always_show_page_title'] = ($variables['node']->type == 'product');
+	 $variables['always_show_page_title'] = ($variables['node']->type == 'product');
 	 // menu depth override kalatheme
 	 // Get the entire main menu tree.
 	  $main_menu_tree = array();
