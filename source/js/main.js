@@ -6,8 +6,12 @@
  */
 
 (function($) {
-  Drupal.behaviors.ideast_main = {
-    attach: function (context, settings) {
+  Drupal.behaviors.atk_main = {
+			attach: function (context, settings) {
+				// bootstrap tooltips and popovers must be activated
+				$('[data-toggle="tooltip"]').tooltip();
+				$('[data-toggle="popover"]').popover();
+			
 			$(window).scroll(function() {
 				if ($('.navbar').length && $('.navbar').offset().top > 50) {
 				            $('.navbar').addClass('top-nav-collapse');
