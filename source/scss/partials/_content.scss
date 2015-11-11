@@ -59,6 +59,19 @@
 	background-color: #efefef;
 }
 
+.dv-bg-alt-3 {
+	background-color: #329911;
+	color: #f5f5f5;
+	h1, h2, h3, h4, h5 {
+		color: #f5f5f5;
+	}
+	a:link, a:visited {
+		color: #ffffcc;
+	}
+	a:hover, a:active {
+		color: #fff;
+	}
+}
 
 /* helper classes */
 
@@ -86,4 +99,14 @@
   width: 1600px;
   height: 800px;
   top: 0;
+}
+
+.dv-news-pane {
+	padding: 35px 0;
+	
+	.dv-news-title {
+		font-size: 16px;
+	}
+	.dv-news-date {}
+	.dv-news-teaser {}
 }
