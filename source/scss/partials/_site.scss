@@ -8,7 +8,11 @@ body {
 
 // hack the fucking row/container problem
 
-.container, .container-fluid, .row {
+.container, .container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+.row {
 	margin-left:0; margin-right:0;
 }
 
