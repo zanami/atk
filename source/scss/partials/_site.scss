@@ -6,6 +6,12 @@ body {
 	background: $gray-lighter url(/sites/dverivizit.ru/themes/atk/img/bg.jpg) left top repeat;
 }
 
+// hack the fucking row/container problem
+
+.container, .container-fluid, .row {
+	margin-left:0; margin-right:0;
+}
+
 #page {
 	overflow: hidden;
 }

@@ -102,8 +102,10 @@
 }
 
 .dv-news-pane {
-	padding: 35px 0;
 	
+	.pane-content {
+		padding: 35px 0;
+	}
 	.dv-news-title {
 		font-size: 16px;
 	}
