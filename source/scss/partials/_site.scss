@@ -89,6 +89,8 @@ luxe - 7764be (8873c8)
 }
 
 .dv-nav-top {
-	@extend .nav;
-	@extend .nav-pills;
+	ul.menu {
+		@extend .nav;
+		@extend .nav-pills;
+	}
 }
