@@ -99,6 +99,7 @@ luxe - 7764be (8873c8)
 		a {
 			color: #333;
 			text-transform: uppercase;
+			border-radius: 0 0 3px 3px;
 		}
 		.menu-mlid-1553 a {
 			background-color: #6eb61f;
@@ -109,7 +110,7 @@ luxe - 7764be (8873c8)
 		}
 	}
 	@media (min-width: $grid-float-breakpoint-max) {
-		margin-bottom: -20px;
+		margin-bottom: -25px;
 	}
 
 }
