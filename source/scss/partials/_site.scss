@@ -102,12 +102,14 @@ luxe - 7764be (8873c8)
 			border-radius: 0 0 3px 3px;
 			padding: 15px 15px 5px 15px;
 		}
-		.menu-mlid-1553 a {
-			background-color: #6eb61f;
-			color: #fff;
-		}
-		.menu-mlid-1553 a:hover {
-			background-color: #5ea69f;
+		li {
+			.menu-mlid-1553 a {
+				background-color: #6eb61f;
+				color: #fff;
+				&:hover {
+					background-color: #5ea69f;
+				}
+			}
 		}
 	}
 	@media (min-width: $grid-float-breakpoint-max) {
