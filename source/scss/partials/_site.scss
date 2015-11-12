@@ -39,6 +39,10 @@ body {
 	img {
 		max-width: none;
 	}
+	img.img-responsive {
+		max-width: 100%;
+		height: auto;
+	}
 }
 
 /* eco - 91ce20  (b1d725)
