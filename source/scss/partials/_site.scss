@@ -96,5 +96,14 @@ luxe - 7764be (8873c8)
 	ul.menu {
 		@extend .nav;
 		@extend .nav-pills;
+		a {
+			color: #fff;
+		}
+		.menu-mlid-1553 a {
+			background-color: #6eb61f;
+		}
+		.menu-mlid-1553 a:hover {
+			background-color: #5ea69f;
+		}
 	}
 }
