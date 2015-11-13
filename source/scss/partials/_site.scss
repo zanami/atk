@@ -113,6 +113,15 @@ luxe - 7764be (8873c8)
 		}
 		li.menu-mlid-1553 {
 			 a {
+				background-color: #ce565f;
+				color: #fff;
+				&:hover {
+					background-color: #be464f;
+				}
+			}
+		}
+		li.menu-mlid-1562 {
+			 a {
 				background-color: #6eb61f;
 				color: #fff;
 				&:hover {
@@ -120,6 +129,7 @@ luxe - 7764be (8873c8)
 				}
 			}
 		}
+
 	}
 	@media (min-width: $grid-float-breakpoint-max) {
 		margin-bottom: -25px;
