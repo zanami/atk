@@ -29,6 +29,7 @@ body {
 #main-wrapper {
 	margin-bottom: 0px;
 	margin-top: 0px;
+	background: #fff;
 }
 #footer-wrapper {
 	border-top: 8px solid #859d8f;
@@ -85,10 +86,9 @@ luxe - 7764be (8873c8)
 .dv-nav-secondary {
 	// 2 level menu
 	padding: 10px 0;
-	ul {
-//		margin: 0;
-//		@extend .list-inline;
-		
+	ul.menu {
+		@extend .nav;
+		@extend .nav-pills;		
 	}
 }
 
