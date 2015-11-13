@@ -159,7 +159,6 @@
       </nav>
 
     </div>
-		<?php print render($page['header']); ?>
   </header>
 
   <!-- Page Main -->
@@ -175,7 +174,7 @@
 	            </h1>
 						</div>
           <?php endif; ?>
-					
+					<?php print render($page['header']); ?>
 					<?php if ($secondary_menu): ?>
 						<div class="dv-bg-main dv-nav-secondary"><div class="container">
 		        <?php
