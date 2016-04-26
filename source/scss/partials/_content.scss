@@ -116,3 +116,11 @@
 .dv-block-title {
 	font-weight: 100;
 }
+
+/* views more link */
+
+.view .more-link a {
+  @extend .btn;
+  @extend .btn-small;
+  @extend .btn-primary;
+}
