@@ -124,3 +124,21 @@
   @extend .btn-sm;
   @extend .btn-primary;
 }
+
+/* block see also news */
+
+.block-views {
+	border-top: 1px solid #eee;
+	margin: 10px 0;
+	padding: 20px 0;
+	h2 {
+		font-size: 21px;
+		text-align: center;
+	}
+	.view-content.row {
+		margin: 0;
+	}
+	.dv-news-title {
+		font-size: 16px;
+	}
+}

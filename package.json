@@ -16,7 +16,7 @@
     "npm": "^1.4.21"
   },
   "dependencies": {
-    "browser-sync": "^2.12.5",
+    "browser-sync": "^2.13.0",
     "gulp": "^3.8.11",
     "gulp-concat": "^2.5.2",
     "gulp-jshint": "^1.11.0",
