@@ -119,7 +119,8 @@
 
 // features list
 
-.item-list .features-list {
+.item-list .features-list,
+.features-list .item-list {
 	li {
 		margin-left: 1em;
 		padding-left: 24px;
