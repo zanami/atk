@@ -2,6 +2,17 @@
  * Default content styles
  */
 
+.content {
+  img {
+    max-width: none;
+  }
+  img.img-responsive,
+  img.image-responsive{
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 .dv-hero-pane h4.pane-title {
   margin: 0;
   padding: 13px 17px;

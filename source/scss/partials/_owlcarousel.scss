@@ -4,6 +4,9 @@
 
 
 .owl-carousel {
+  @media(min-width: $grid-float-breakpoint-max) {
+    margin-bottom: 40px;
+  }
 	
 	.owl-controls {
 		margin: 0;
