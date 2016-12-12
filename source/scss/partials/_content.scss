@@ -197,14 +197,14 @@
 
 .dv-banner {
 	&-image {
-		max-height: 142px;
+		max-height: 196px;
 		overflow: hidden;
 		img {
 			max-width: none;
 			height: auto
 		}
-	}
-	@media (min-width: $grid-float-breakpoint-max) {
-		max-height: none;
-	}
+      @media (min-width: $grid-float-breakpoint-max) {
+        max-height: none;
+      }
+    }
 }
