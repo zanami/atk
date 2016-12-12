@@ -8,22 +8,36 @@
 	.owl-controls {
 		margin: 0;
 	}
+	.owl-item {
+		margin-bottom: 40px;
+	}
 	.owl-buttons {
 		.owl-next {
 			position: absolute;
 			top: 50%;
-			right: 2%;
+			right: 20px;
 		}
 		.owl-prev {
 			position: absolute;
 			top: 50%;
-			left: 2%;
+			left: 20px;
 		}
   }
 	.owl-pagination {
 		position: absolute;
-		bottom: 10%;
-		left: 30%;
-		right: 30%;
+		bottom: 30px;
+		left: 10%;
+		right: 10%;
 	}
+
+  .shade-light {
+    a {
+      color: $text-color;
+
+      &:hover {
+        color: darken($text-color, 20%);
+      }
+
+    }
+  }
 }
