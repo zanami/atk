@@ -36,11 +36,12 @@ body {
 	padding: 20px 0;
 }
 
-#content {
+.content {
 	img {
 		max-width: none;
 	}
-	img.img-responsive {
+	img.img-responsive,
+	img.image-responsive{
 		max-width: 100%;
 		height: auto;
 	}

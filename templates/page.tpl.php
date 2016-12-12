@@ -219,7 +219,7 @@
       </div> <!-- /.section, /#top-content -->
 
       <div class="section">
-        <div id="content" class="column <?php $no_panels ? print 'container' : ''; ?>">
+        <div id="content" class="column content <?php $no_panels ? print 'container' : ''; ?>">
             <?php print render($page['content']); ?>
         </div>
       </div><!-- /.section, /#content -->
