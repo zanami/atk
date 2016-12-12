@@ -166,3 +166,16 @@
 .achtung {
 	color: #d82a13;
 }
+
+// owl carousel main (front) texts
+
+.dv-shade-light {
+  a {
+    color: $text-color;
+
+    &:hover {
+      color: darken($text-color, 20%);
+    }
+
+  }
+}

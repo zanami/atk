@@ -29,15 +29,4 @@
 		left: 10%;
 		right: 10%;
 	}
-
-  .shade-light {
-    a {
-      color: $text-color;
-
-      &:hover {
-        color: darken($text-color, 20%);
-      }
-
-    }
-  }
 }
